@@ -10,7 +10,7 @@ html {
     font-size: 20px;
     
     /* default root font size is 16px for most of the browsers and desired font size was 17-18.
-    When you divide desired font size by root font size, you get rem  */
+    When you divide desired font size by root font size, you get rem. Prefered using px instead of rem for this assignment  */
     align-content: center;
     color: white;
     text-align: center;
