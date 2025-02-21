@@ -2,44 +2,92 @@
 
 * {
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     margin: 0 auto;
     min-width: 1000px;
     max-width: 1400px;
-  }
+}
   
-  /* Layout */
+/* Layout */
   
-  section {
+section {
     float: left;
     width: 50%;
-  }
+}
   
-  aside {
+aside {
     float: left;
     width: 30%;
-  }
+}
   
-  nav {
+nav {
     float: left;
     width: 20%;
-  }
+}
   
-  footer {
+footer {
     clear: both;
-  }
+}
   
-  header, section, aside, nav, footer {
+header, section, aside, nav, footer {
     padding: 20px;
-  }
+}
   
-  /* header and footer */
+/* Header and footer */
   
-  header, footer {
+header, footer {
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
-  }
+}
   
-  /* WRITE YOUR CODE BELOW HERE */
+@font-face { 
+    font-family: 'Bainsley';
+    src: url('fonts/BainsleyRoman.eot');
+    src: url('fonts/BainsleyRoman.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BainsleyRoman.woff2') format('woff2'),
+         url('fonts/BainsleyRoman.woff') format('woff'),
+         url('fonts/BainsleyRoman.ttf') format('truetype'),
+         url('fonts/BainsleyRoman.svg#Bainsley') format('svg');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.eot');
+    src: url('fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+         url('fonts/SourceSansPro-Regular.woff') format('woff'),
+         url('fonts/SourceSansPro-Regular.ttf') format('truetype'),
+         url('fonts/SourceSansPro-Regular.svg#SourceSansPro') format('svg');
+}
+
+html {
+    font-family: Bainsley, serif;
+    font-size: 10px;
+}
+
+h1, h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, li {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
